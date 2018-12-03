@@ -1,33 +1,28 @@
 {
-  "name": "makers_bnb_app",
+  "name": "makersb-b",
   "version": "1.0.0",
-  "description": "The coolest way to rent your space or rent a space",
-  "main": "index.js",
-  "dependencies": {
-    "cypress": "^3.1.2"
-    "next": "^7.0.2",
-    "react": "^16.6.3",
-    "react-dom": "^16.6.3"
+  "description": "A project on cloning Makers B-B",
+  "main": "my.conf.js",
+  "devDependencies": {
+    "jasmine-core": "*",
+    "karma": "*",
+    "karma-cli": "*",
+    "karma-jasmine": "*",
+    "karma-phantomjs-launcher": "*",
+    "karma-chrome-launcher": "*"
   },
-  "devDependencies": {},
-
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-    "dev": "next",
-    "build": "next build",
-    "start": "next start"
+    "test": "karma start spec/jasmine/karma.conf.js --single-run"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kirillzabrodin/makersB-B.git"
   },
-
-  "license": "ISC",
+  "author": "TBC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/kirillzabrodin/makersB-B/issues"
   },
-
   "homepage": "https://github.com/kirillzabrodin/makersB-B#readme",
-
-  
+  "dependencies": {}
 }
