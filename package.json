@@ -5,19 +5,29 @@
   "main": "index.js",
   "dependencies": {
     "cypress": "^3.1.2"
+    "next": "^7.0.2",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
   },
   "devDependencies": {},
+
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kirillzabrodin/makersB-B.git"
   },
-  "author": "Ijeoma Nelson",
+
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/kirillzabrodin/makersB-B/issues"
   },
-  "homepage": "https://github.com/kirillzabrodin/makersB-B#readme"
+
+  "homepage": "https://github.com/kirillzabrodin/makersB-B#readme",
+
+  
 }
