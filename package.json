@@ -1,0 +1,30 @@
+{
+  "name": "makersB-B",
+  "version": "1.0.0",
+  "description": "### Specification",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kirillzabrodin/makersB-B.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kirillzabrodin/makersB-B/issues"
+  },
+  "homepage": "https://github.com/kirillzabrodin/makersB-B#readme",
+  "dependencies": {
+    "next": "^7.0.2",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  }
+}
