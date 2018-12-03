@@ -1,0 +1,23 @@
+{
+  "name": "makers_bnb_app",
+  "version": "1.0.0",
+  "description": "The coolest way to rent your space or rent a space",
+  "main": "index.js",
+  "dependencies": {
+    "cypress": "^3.1.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kirillzabrodin/makersB-B.git"
+  },
+  "author": "Ijeoma Nelson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kirillzabrodin/makersB-B/issues"
+  },
+  "homepage": "https://github.com/kirillzabrodin/makersB-B#readme"
+}
