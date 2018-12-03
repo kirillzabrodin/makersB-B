@@ -2,12 +2,13 @@
 
 ### Specification
 
-MakersBnB will allow users to create an account and list multiple spaces for rent on their account. Each space will have a short description, name and a price and will have its availability listed. Any user can request to hire a space and the owner of the space can approve it. The space will only become unavailable once its confirmed.
+MakersBnB will allow users to create an account and to list multiple spaces available to rent. Each space will have a short description, a name, a price and its availability. Any user can request to hire a space and the owner of the space can then approve it. The space will only become unavailable once its confirmed.
 
 ### Technologies
 
-- Javascript
-- Jasmine, Cypress
+- Javascript, Node.js
+- MongoDB
+- Jasmine, Cypress, Travis, ESLint
 - HTML, CSS
 - Git
 
@@ -17,6 +18,11 @@ MakersBnB will allow users to create an account and list multiple spaces for ren
 As a user
 So that I can become a space renter/owner
 I want to be able to sign-up
+```
+```
+As a user
+So that I can access my account
+I want to be able to log in with my username and password
 ```
 ```
 As a space owner
@@ -30,7 +36,7 @@ I want to give my space a name, description
 ```
 ```
 As a space owner
-So that inform customers of the price
+So that I can inform customers of the price
 I want my space to list a price
 ```
 ```
@@ -61,7 +67,7 @@ I want to confirm my booking
 ```
 As a space owner
 So that I don't double book
-I want my space to be unavailable when booked
+I want my space to become unavailable once confirmed by the renter
 ```
 
 
