@@ -7,7 +7,8 @@ MakersBnB will allow users to create an account and to list multiple spaces avai
 ### Technologies
 
 - Javascript, Node.js
-- Jasmine, Cypress
+- MongoDB
+- Jasmine, Cypress, Travis, ESLint
 - HTML, CSS
 - Git
 
