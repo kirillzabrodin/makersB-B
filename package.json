@@ -1,8 +1,13 @@
 {
   "name": "makersb-b",
   "version": "1.0.0",
-  "description": "A project on cloning Makers B-B",
-  "main": "my.conf.js",
+  "description": "The coolest way to rent your space or rent a space",
+  "dependencies": {
+    "cypress": "^3.1.2",
+    "next": "^7.0.2",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
+  },
   "devDependencies": {
     "jasmine-core": "*",
     "karma": "*",
@@ -12,10 +17,10 @@
     "karma-chrome-launcher": "*"
   },
   "scripts": {
-    "test": "karma start spec/jasmine/karma.conf.js --single-run",
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "test": "karma start spec/jasmine/karma.conf.js --single-run"
   },
   "repository": {
     "type": "git",
@@ -26,6 +31,5 @@
   "bugs": {
     "url": "https://github.com/kirillzabrodin/makersB-B/issues"
   },
-  "homepage": "https://github.com/kirillzabrodin/makersB-B#readme",
-  "dependencies": {}
+  "homepage": "https://github.com/kirillzabrodin/makersB-B#readme"
 }
