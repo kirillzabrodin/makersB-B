@@ -8,6 +8,9 @@ module.exports = function(config) {
     basePath: '',
 
 
+    // plugins starting with karma- are autoloaded
+    plugins: ['karma-chrome-launcher', 'karma-jasmine'],
+
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
     frameworks: ['jasmine'],
@@ -26,41 +29,52 @@ module.exports = function(config) {
 
 
     // preprocess matching files before serving them to the browser
-    // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
-    preprocessors: {
-    },
+  // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
+  preprocessors: {
+  },
 
+  // test results reporter to use
+  // possible values: 'dots', 'progress'
+  // available reporters: https://npmjs.org/browse/keyword/karma-reporter
+  reporters: ['progress'],
 
-    // test results reporter to use
-    // possible values: 'dots', 'progress'
-    // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-    reporters: ['progress'],
+  // web server port
+  port: 9876,
 
+  // enable / disable colors in the output (reporters and logs)
+  colors: true,
 
-    // web server port
-    port: 9876,
+  // level of logging
+  // possible values: config.LOG_DISABLE || config.LOG_ERROR || config.LOG_WARN || config.LOG_INFO || config.LOG_DEBUG
+  logLevel: config.LOG_INFO,
 
+  // enable / disable watching file and executing tests whenever any file changes
+  autoWatch: true,
 
-    // enable / disable colors in the output (reporters and logs)
-    colors: true,
+  // start these browsers
+  // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
+  browsers: ['Chrome', 'ChromeCanary', 'Firefox', 'Opera', 'IE'],
 
+  // e.g see https://swizec.com/blog/how-to-run-javascript-tests-in-chrome-on-travis/swizec/6647
+  customLaunchers: {
+    Chrome_travis_ci: {
+      base: 'Chrome',
+      flags: ['--no-sandbox']
+    }
+  },
 
-    // level of logging
-    // possible values: config.LOG_DISABLE || config.LOG_ERROR || config.LOG_WARN || config.LOG_INFO || config.LOG_DEBUG
-    logLevel: config.LOG_INFO,
+  // Continuous Integration mode
+  // if true, Karma captures browsers, runs the tests and exits
+  singleRun: false,
 
+  // Concurrency level
+  // how many browser should be started simultaneous
+  concurrency: Infinity
+};
 
-    // enable / disable watching file and executing tests whenever any file changes
-    autoWatch: true,
+if (process.env.TRAVIS) {
+    configuration.browsers = ['Chrome_travis_ci'];
+}
 
-
-    // start these browsers
-    // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['Chrome'],
-
-
-    // Continuous Integration mode
-    // if true, Karma captures browsers, runs the tests and exits
-    singleRun: false
-  })
+config.set(configuration);
 }
