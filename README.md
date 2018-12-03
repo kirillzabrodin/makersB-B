@@ -14,9 +14,11 @@ MakersBnB will allow users to create an account and to list multiple spaces avai
 
 ### Installation
 
-You will need Node >= 6.x.x installed in order to run the Next.js server. If you need to, use [nvm](https://github.com/creationix/nvm#usage) to easily switch between Node versions. 
+You will need Node >= 6.x.x installed in order to install and run the Next.js server. If you need to, use [nvm](https://github.com/creationix/nvm#usage) to easily switch between Node versions. 
 
-To run the site locally, type `npm run dev` into the terminal. Then open [localhost:3000](localhost:3000) from your favourite browser.
+To install Next.js, type `npm install --save react react-dom next` into the terminal.
+
+Then to run the site locally, type `npm run dev` into the terminal and open [localhost:3000](http://localhost:3000) from your favourite browser.
 
 ### User Stories
 
