@@ -1,31 +1,26 @@
 {
-  "name": "Travis-for-MakersBnB",
-  "version": "0.0.1",
-  "description": "Makers BnB Travis tests",
+  "name": "makersb-b",
+  "version": "1.0.0",
+  "description": "A project on cloning Makers B&B",
+  "main": "my.conf.js",
+  "dependencies": {
+    "jasmine-core": "^2.99.1",
+    "karma-chrome-launcher": "^0.1.12",
+    "karma-jasmine": "^0.3.8",
+    "karma": "^0.12.37"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kirillzabrodin/makersB-B"
+    "url": "git+https://github.com/kirillzabrodin/makersB-B.git"
   },
-  "keywords": [
-    "testing",
-    "karma",
-    "jasmin",
-    "travis",
-    "node",
-    "makers",
-    "BnB",
-    "makersBnB"
-  ],
-  "author": "@dancing-woman-emoji-team",
+  "author": "TBC",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/kirillzabrodin/makersB-B/issues"
   },
-  "homepage": "https://github.com/kirillzabrodin/makersB-B",
-  "devDependencies": {
-    "jasmine-core": "^2.99.1",
-    "karma": "^0.12.37",
-    "karma-chrome-launcher": "^0.1.12",
-    "karma-jasmine": "^0.3.8"
-  },
+  "homepage": "https://github.com/kirillzabrodin/makersB-B#readme"
 }
