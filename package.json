@@ -12,7 +12,10 @@
     "karma-chrome-launcher": "*"
   },
   "scripts": {
-    "test": "karma start spec/jasmine/karma.conf.js --single-run"
+    "test": "karma start spec/jasmine/karma.conf.js --single-run",
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
   },
   "repository": {
     "type": "git",
