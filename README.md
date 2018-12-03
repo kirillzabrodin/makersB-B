@@ -2,15 +2,21 @@
 
 ### Specification
 
-MakersBnB will allow users to create an account and to list multiple spaces available to rent. Each space will have a short description, a name, a price and its availability. Any user can request to hire a space and the owner of the space can then approve it. The space will only become unavailable once its confirmed.
+MakersBnB will allow users to create an account and to list multiple spaces available to rent. Each space will have a short description, a name, a price and its availability. Any user can request to hire a space and the owner of the space can then approve it. The space will only become unavailable once confirmed.
 
 ### Technologies
 
-- Javascript, Node.js
-- MongoDB
-- Jasmine, Cypress, Travis, ESLint
+- Javascript, Node, React, Next.js
+- MongoDB, Mongoose
+- Jasmine, Cypress, Travis
 - HTML, CSS
 - Git
+
+### Installation
+
+You will need Node >= 6.x.x installed in order to run the Next.js server. If you need to, use [nvm](https://github.com/creationix/nvm#usage) to easily switch between Node versions. 
+
+To run the site locally, type `npm run dev` into the terminal. Then open [localhost:3000](localhost:3000) from your favourite browser.
 
 ### User Stories
 
@@ -56,12 +62,12 @@ I want to request to hire a space
 ```
 ```
 As a space owner
-So that control my space
+So that I can control my space
 I want to view any requests and confirm them
 ```
 ```
 As a space renter
-So that I can enjoy my crib
+So that I can start planning my holiday in my crib
 I want to confirm my booking
 ```
 ```
@@ -69,13 +75,3 @@ As a space owner
 So that I don't double book
 I want my space to become unavailable once confirmed by the renter
 ```
-
-
-
-
-
-
-
-
-
-
