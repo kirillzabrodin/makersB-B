@@ -1,5 +1,5 @@
 // Karma configuration
-// Generated on Mon Dec 03 2018 13:21:39 GMT+0000 (Greenwich Mean Time)
+// Generated on Mon Dec 03 2018 14:59:00 GMT+0000 (Greenwich Mean Time)
 
 module.exports = function(config) {
   config.set({
@@ -15,7 +15,8 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      '*.js'
+      '*.js',
+      '../../src/*.js'
     ],
 
 
