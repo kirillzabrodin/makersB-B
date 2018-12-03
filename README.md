@@ -77,3 +77,11 @@ As a space owner
 So that I don't double book
 I want my space to become unavailable once confirmed by the renter
 ```
+
+### Setup
+
+To install travis and all the dependencies to run the tests locally just run:
+```
+npm install --save-dev karma karma-cli karma-jasmine karma-phantomjs-launcher karma-chrome-launcher
+```
+Local jasmine tests can be run using ```npm test```.
