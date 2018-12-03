@@ -1,12 +1,31 @@
 {
-  "name": "learn-travis-team-dancing-lady-emoji",
-  "description": "Simple Travis-CI check for JSHint (Code Linting)",
-  "author": "dancing-lady-emoji-team",
+  "name": "Travis-for-MakersBnB",
   "version": "0.0.1",
-  "devDependencies": {
-    "jshint": "^2.6.0"
+  "description": "Makers BnB Travis tests",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kirillzabrodin/makersB-B"
   },
-  "scripts": {
-    "test": "jshint hello.js"
-  }
+  "keywords": [
+    "testing",
+    "karma",
+    "jasmin",
+    "travis",
+    "node",
+    "makers",
+    "BnB",
+    "makersBnB"
+  ],
+  "author": "@dancing-woman-emoji-team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kirillzabrodin/makersB-B/issues"
+  },
+  "homepage": "https://github.com/kirillzabrodin/makersB-B",
+  "devDependencies": {
+    "jasmine-core": "^2.99.1",
+    "karma": "^0.12.37",
+    "karma-chrome-launcher": "^0.1.12",
+    "karma-jasmine": "^0.3.8"
+  },
 }
