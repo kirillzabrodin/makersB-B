@@ -14,7 +14,7 @@ MakersBnB will allow users to create an account and to list multiple spaces avai
 
 ### Installation
 
-You will need Node >= 6.x.x installed in order to install and run the Next.js server. If you need to, use [nvm](https://github.com/creationix/nvm#usage) to easily switch between Node versions. 
+You will need Node >= 6.x.x installed in order to install and run the Next.js server. If you need to, use [nvm](https://github.com/creationix/nvm#usage) to easily switch between Node versions.
 
 To install Next.js, type `npm install --save react react-dom next` into the terminal.
 
@@ -85,3 +85,25 @@ To install travis and all the dependencies to run the tests locally just run:
 npm install --save-dev karma karma-cli karma-jasmine karma-phantomjs-launcher karma-chrome-launcher
 ```
 Local jasmine tests can be run using ```npm test```.
+
+To install Cypress locally:
+
+*"Make sure that you have already run npm init or have a node_modules folder or
+package.json file in the root of your project to ensure cypress is installed in
+the correct directory."*
+
+Then run the following in the terminal
+
+```
+cd /your/project/path
+
+npm install cypress --save-dev
+
+```
+
+To open Cypress, do the following.
+
+```
+./node_modules/.bin/cypress open
+
+```
