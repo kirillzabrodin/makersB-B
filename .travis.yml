@@ -1,14 +1,7 @@
 language: node_js
 script: karma start spec/jasmine/karma.conf.js --single-run
 node_js:
-- "node"
-
-before_script:
-  - cd ./nodejs
-
-script:  
-- npm install
-- npm run postinstall
+- "0.10"
 
 before_install:
 - export CHROME_BIN=chromium-browser
