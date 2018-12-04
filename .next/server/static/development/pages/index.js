@@ -232,17 +232,19 @@ var _jsxFileName = "/Users/kirillzabrodin/Projects/makersB-B/pages/index.js";
 
 
 
+var Dotenv = __webpack_require__(/*! dotenv-webpack */ "dotenv-webpack");
+
 var Index = function Index() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_MyLayout_js__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6
+      lineNumber: 7
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 8
     },
     __self: this
   }, "Welcome to MakersBnB"));
@@ -261,6 +263,17 @@ var Index = function Index() {
 
 module.exports = __webpack_require__(/*! ./pages/index.js */"./pages/index.js");
 
+
+/***/ }),
+
+/***/ "dotenv-webpack":
+/*!*********************************!*\
+  !*** external "dotenv-webpack" ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("dotenv-webpack");
 
 /***/ }),
 
