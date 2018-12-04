@@ -7,3 +7,6 @@ FizzBuzz.prototype.play = function(number) {
   if (output === "")  output = number;
   return output;
 }
+
+
+console.log("I am a vodka boat")

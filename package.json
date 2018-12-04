@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "The coolest way to rent your space or rent a space",
   "dependencies": {
+    "mongoose": "^5.3.14",
     "next": "^7.0.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3"
