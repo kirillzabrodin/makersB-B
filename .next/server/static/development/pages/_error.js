@@ -112,7 +112,7 @@ module.exports = __webpack_require__(/*! next/error */ "next/error")
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/kirillzabrodin/Projects/makersB-B/node_modules/next/dist/pages/_error.js */"./node_modules/next/dist/pages/_error.js");
+module.exports = __webpack_require__(/*! /Users/tomdoh/makers_projects/makersB-B/node_modules/next/dist/pages/_error.js */"./node_modules/next/dist/pages/_error.js");
 
 
 /***/ }),
