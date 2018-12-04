@@ -1,15 +1,16 @@
 language: node_js
 script:
 - karma start spec/jasmine/karma.conf.js --single-run
-- npx cypress run 
-
+- npx cypress run
 node_js:
-- "10.14.1"
-
+- 10.14.1
 before_install:
 - export CHROME_BIN=chromium-browser
 - export DISPLAY=:99.0
 - sh -e /etc/init.d/xvfb start
-
 install:
-  - npm ci
+- npm ci
+env:
+  global:
+  - secure: vbfaogvqL/uAr/6YJcw7AG21PDbTL/qAMXaW48SiUJ97ybwCTuroEfbiNsnn6/9WDO+3gf7Z2RY+1uQ7OGPNovNdpHGCr3RLgk5Dg9X6lTLQrl8LzngV0QAPA4tUEcyLQ5a+5s3VeHC3sYh3XDD+8FMmYDnM/BgkZcDJrBYd79iISEXTSmUw2g3ioEVLhTq6v1qqYwfVO/k0wCoKVk5ESkjRHPo+JHTpHLD7iW2xj51yzmAM+RZ5xCExaJFwizm7MWYTsfd8wl9K6PNfF3Ygiuwvlptp1xiXcXfqqBoxm1bEf/6/LJFL2/D4Z2ZifsGTp49QBJbRpZdaRrl5DeaNeY729qOI72hx81saWBgiCZbe53iyFRHcs0kF1eZ+v2lT0tNkjg7BrFbHpBnfYrw0pZKIluRNJafm8P6a5Qq8F5gX5E/fR52OOTRt9+VIjZrgG44qcsTCO2M3ztq6wFbThO4ZiHwluNYXPypFF2GzRIKoclsyhiQyh77Hce2GyEtUD1cFLx7ykrUy5/jzMGOQaF9ew9/oKuun9ZYMPj2RSsKSr3Rpsjqfa/CQjXoeGYUZWUNI23AwQfyBtAsDumDabJ6yJLB4HqWLBam1xTZrWPPo9j+u9gLNH+UT4H8lL9aPgwOjOMn8gMVdpu1N2b1zR0lDsdkE4fOCAwc9tHFOUbk=
+  - secure: s65Z1IcOUQEc9xQnEHeWSZhyQACSt1Qc4TqE8p0IsazQpjBec0ooXKPvIF479dEMHs0xDp7KS7c5nrhsUAYrXS5h+HxrIqpvOnfxb8v6eezAns3jP+gxpjWQx7R62hwETaZye6hWnwtncZaXmwzIUznolHlYh5TYQqAP67DxGka7Y82PHO7VoL4FvQyMBUe5mhpHNoryutdscCelgrVH/gJNyPr+oROTOlsQu47950vYFUqi9YnDxmKtOErYOghM+D85uo7SGuyFcQnyfYw+O/+jnFKhRr3qh3jxiq8QHMi1EhUhe3JUgw0L6ILvoyXGnBI4UQetlR0nmSFddfcCul5OskySFd9FSMblVBediN67o2GLwNeSxSSYgt4EYH0wxZhPKvTEz66irVh2AUm/wfLbc9M+V6jZyiFCbesQvoXli03davDcifkH1KTm6EasacKyJyfJhzEPFoTESHy0o+CUQ9ja9C1dFGdodG/KAGSvN8GsxqkHWHgjTgzmo04wIiOjc472uabuoww1mN9mDhpGDX9yMkv792S+DnqBN6IpML26jNm22ATXFN8/r2D+5ve0lNsIC6p0E+mSZ9doBFQTssuEXipWXy7SRT3+9QaqShx2HMlnHzZEAoqVfyoCsUBVa3m6XoktixMQNyLx1CgoRMlW5NzZeSrkoFIELmM=
