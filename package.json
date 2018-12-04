@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "The coolest way to rent your space or rent a space",
   "dependencies": {
+    "dotenv": "^6.1.0",
+    "module": "^1.2.5",
     "next": "^7.0.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3"
@@ -20,7 +22,8 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "test": "karma start spec/jasmine/karma.conf.js --single-run"
+    "test": "karma start spec/jasmine/karma.conf.js --single-run",
+    "test 2": "npx cypress run"
   },
   "repository": {
     "type": "git",
