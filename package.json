@@ -20,7 +20,8 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "test": "karma start spec/jasmine/karma.conf.js --single-run"
+    "test": "karma start spec/jasmine/karma.conf.js --single-run",
+    "cy test": "npx cypress run"
   },
   "repository": {
     "type": "git",
