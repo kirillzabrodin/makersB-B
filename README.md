@@ -107,3 +107,39 @@ To open Cypress, do the following.
 ./node_modules/.bin/cypress open
 
 ```
+
+To install MongoDB
+
+Use Homebrew  install over node
+
+```
+brew update
+brew install mongodb
+```
+After downloading Mongo, create the “db” directory. This is where the Mongo data files will live. You can create the directory in the default location by running 
+```
+mkdir -p /data/db
+```
+*nb: if this doesn't work, try:*
+```
+mkdir -p \data\db
+```
+Make sure that the /data/db directory has the right permissions by running:
+```
+> sudo chown -R `id -un` /data/db
+> # Enter your password
+```
+Run the Mongo daemon, in one of your terminal windows run ```mongod```. This should start the Mongo server.
+Run the Mongo shell, with the Mongo daemon running in one terminal, type mongo in another terminal window. This will run the Mongo shell which is an application to access data in MongoDB.
+To exit the Mongo shell run ```quit()```
+To stop the Mongo daemon hit ```ctrl-c```
+
+To install manually
+
+[Download here](https://www.mongodb.org/downloads#production)
+```
+cd Downloads
+mv mongodb-osx-x86_64-3.0.7.tgz ~/
+```
+then follow the same steps as above with regards to creating the new db folder
+

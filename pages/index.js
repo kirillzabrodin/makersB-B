@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import Header from '../components/Header'
 import Layout from '../components/MyLayout.js'
-const Dotenv = require('dotenv-webpack');
+import SignupForm from '../components/SignupForm.js'
+
 
 const Index = () => (
   <Layout>
     <h1>Welcome to MakersBnB</h1>
+    <SignupForm />
   </Layout>
 )
 
