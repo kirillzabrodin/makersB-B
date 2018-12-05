@@ -1,0 +1,21 @@
+{
+  "defaultConnection": "default",
+  "connections": {
+    "default": {
+      "connector": "strapi-hook-mongoose",
+      "settings": {
+        "client": "mongo",
+        "host": "ds155492.mlab.com",
+        "srv": false,
+        "port": "55492",
+        "database": "makers-bnb",
+        "username": "travis",
+        "password": "travis.passw0rd"
+      },
+      "options": {
+        "authenticationDatabase": "makers-bnb",
+        "ssl": false
+      }
+    }
+  }
+}
