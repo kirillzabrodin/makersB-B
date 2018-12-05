@@ -1,7 +1,5 @@
 var mongoose = require('mongoose');
 
-//Define a schema
-
 const userSchema = mongoose.Schema({
   name: String,
   email: String,
@@ -9,6 +7,6 @@ const userSchema = mongoose.Schema({
   rating: Number
 });
 
-const User = mongoose.model('users', userSchema);
+User = mongoose.model('User', userSchema);
 
-export default User
+module.exports = User

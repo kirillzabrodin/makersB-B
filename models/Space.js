@@ -1,7 +1,5 @@
 var mongoose = require('mongoose');
 
-//Define a schema
-
 const spaceSchema = mongoose.Schema({
     name: String,
     description: String,
@@ -11,6 +9,7 @@ const spaceSchema = mongoose.Schema({
     }
   });
 
-const Space = mongoose.model('spaces', spaceSchema);
 
-export default Space
+Space = mongoose.model('Space', spaceSchema);
+
+module.exports = Space
