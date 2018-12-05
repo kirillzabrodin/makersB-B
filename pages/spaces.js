@@ -14,14 +14,14 @@ import {
 class Index extends React.Component {
   constructor(props) {
     super(props);
-    //query state will be passed to RestaurantList for the filter query
+    //query state will be passed to SpaceList for the filter query
     this.state = {
       query: ""
     };
   }
   onChange(e) {
     //set the state = to the input typed in the search Input Component
-    //this.state.query gets passed into RestaurantList to filter the results
+    //this.state.query gets passed into SpaceList to filter the results
     this.setState({ query: e.target.value.toLowerCase() });
   }
   render() {

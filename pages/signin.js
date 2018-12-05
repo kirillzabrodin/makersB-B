@@ -3,8 +3,8 @@ import Layout from '../components/MyLayout.js'
 import LoginForm from '../components/LoginForm.js'
 
 export default () => (
-  <Layout>
+    <div>
     <h2>This is the log-in page</h2>
     <LoginForm />
-  </Layout>
+    </div>
 )
