@@ -25,7 +25,7 @@ class SignupForm extends React.Component {
       <form>
         <label>
           Name:
-          <input
+          <input class= 'name'
             name="name"
             type="text"
             value={this.state.name}
@@ -34,7 +34,7 @@ class SignupForm extends React.Component {
         <br />
         <label>
           Email:
-          <input
+          <input class= 'email'
             name="email"
             type="text"
             value={this.state.email}
@@ -43,7 +43,7 @@ class SignupForm extends React.Component {
         <br />
         <label>
           Password:
-          <input
+          <input class= "password"
             name="password"
             type="text"
             value={this.state.password}
