@@ -2,9 +2,9 @@ class SignupForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      name: "Tom",
-      email: "Email",
-      password: "Password"
+      name: "",
+      email: "",
+      password: ""
     };
 
     this.handleInputChange = this.handleInputChange.bind(this);
@@ -28,6 +28,7 @@ class SignupForm extends React.Component {
           <input
             name="name"
             type="text"
+            placeholder="Name"
             value={this.state.name}
             onChange={this.handleInputChange} />
         </label>
@@ -37,6 +38,7 @@ class SignupForm extends React.Component {
           <input
             name="email"
             type="text"
+            placeholder="Email"
             value={this.state.email}
             onChange={this.handleInputChange} />
         </label>
@@ -46,11 +48,12 @@ class SignupForm extends React.Component {
           <input
             name="password"
             type="text"
+            placeholder="*********"
             value={this.state.password}
             onChange={this.handleInputChange} />
         </label>
         <br />
-        <input type="submit" value="Submit" />
+        <input type="submit" value="Sign up" />
       </form>
     );
   }
