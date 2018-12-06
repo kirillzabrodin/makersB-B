@@ -1,6 +1,6 @@
 import React from "react";
 
-import defaultPage from "../components/hocs/defaultPage";
+import defaultPage from "../hocs/defaultPage";
 import { strapiLogin } from "../lib/auth";
 
 import Router from "next/router";
