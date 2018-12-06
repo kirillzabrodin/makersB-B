@@ -55,10 +55,13 @@ class Layout extends React.Component {
           <Collapse isOpen={!this.state.collapsed} navbar>
               <Nav navbar>
                 <NavItem>
-                  <NavLink href="/log-in">Log in</NavLink>
+                  <NavLink href="/login">Log in</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="/sign-up">Sign up</NavLink>
+                  <NavLink href="/signup">Sign up</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink href="/spaces">Spaces</NavLink>
                 </NavItem>
                 </Nav>
           </Collapse>
