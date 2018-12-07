@@ -1,10 +1,12 @@
+import { Button } from 'reactstrap'
+
 class SignupForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      name: "Tom",
-      email: "Email",
-      password: "Password"
+      name: "",
+      email: "",
+      password: ""
     };
 
     this.handleInputChange = this.handleInputChange.bind(this);
@@ -22,6 +24,8 @@ class SignupForm extends React.Component {
 
   render() {
     return (
+      <div>
+      <h3>Sign up</h3>
       <form>
         <label>
           Name:
@@ -29,6 +33,7 @@ class SignupForm extends React.Component {
             name="name"
             type="text"
             value={this.state.name}
+            placeholder="Name"
             onChange={this.handleInputChange} />
         </label>
         <br />
@@ -38,6 +43,7 @@ class SignupForm extends React.Component {
             name="email"
             type="text"
             value={this.state.email}
+            placeholder="Email"
             onChange={this.handleInputChange} />
         </label>
         <br />
@@ -47,11 +53,13 @@ class SignupForm extends React.Component {
             name="password"
             type="text"
             value={this.state.password}
+            placeholder="Password"
             onChange={this.handleInputChange} />
         </label>
         <br />
-        <input type="submit" value="Submit" />
+        <Button color='primary'>Submit</Button>
       </form>
+      </div>
     );
   }
 }
