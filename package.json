@@ -4,6 +4,7 @@
   "description": "The coolest way to rent your space or rent a space",
   "dependencies": {
     "bootstrap": "^4.1.3",
+    "isomorphic-fetch": "^2.2.1",
     "module": "^1.2.5",
     "mongoose": "^5.3.14",
     "next": "^7.0.2",
