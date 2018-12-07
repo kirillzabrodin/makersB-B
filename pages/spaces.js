@@ -12,6 +12,7 @@ const Spaces = (props) => (
             <CardTitle>{space.name}</CardTitle>
             <CardSubtitle>£{space.price}/night</CardSubtitle>
             <CardText>{space.description}</CardText>
+            <CardText>{space.owner.id}</CardText>
             <Button>Rent this space</Button>
           </CardBody>
         </Card>
