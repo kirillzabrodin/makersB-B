@@ -3,7 +3,7 @@ import Head from "next/head";
 import Link from "next/link";
 import { unsetToken } from "../lib/auth";
 import { Container, Nav, NavItem } from "reactstrap";
-import defaultPage from "./defaultPage";
+import defaultPage from "../components/hocs/defaultPage";
 import Cookie from "js-cookie";
 
 class Layout extends React.Component {
@@ -20,7 +20,7 @@ class Layout extends React.Component {
   }
   render() {
     const { isAuthenticated, children } = this.props;
-    const title = "Welcome to Nextjs";
+    const title = "MakersBnB";
     return (
       <div>
         <Head>
@@ -43,6 +43,11 @@ class Layout extends React.Component {
             <NavItem>
               <Link href="/">
                 <a className="navbar-brand">Home</a>
+              </Link>
+            </NavItem>
+            <NavItem>
+              <Link href="/spaces">
+                <a className="nav-link">Spaces</a>
               </Link>
             </NavItem>
             {isAuthenticated ? (
@@ -78,8 +83,8 @@ class Layout extends React.Component {
           </Nav>
         </header>
         <Container>{children}</Container>
-        {/* <footer className="footer">
-          {"Strapi footer"}
+        <footer className="footer">
+          {"© MakersBnB"}
           <style jsx>
             {`
               .footer {
@@ -96,7 +101,7 @@ class Layout extends React.Component {
               }
             `}
           </style>
-        </footer> */}
+        </footer>
       </div>
     );
   }

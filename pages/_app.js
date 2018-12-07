@@ -1,7 +1,8 @@
 import Layout from "../components/MyLayout";
-import React from "react";
 import withData from "../lib/apollo";
+
 import App, { Container } from "next/app";
+import React from "react";
 
 class MyApp extends App {
   static async getInitialProps({ Component, router, ctx }) {

@@ -1,5 +1,6 @@
 import React from "react";
 import { strapiRegister } from "../lib/auth";
+import defaultPage from "../components/hocs/defaultPage";
 
 import Router from "next/router";
 import {
@@ -42,6 +43,9 @@ class SignUp extends React.Component {
     strapiRegister(username, email, password)
       .then(() => this.setState({ loading: false }))
       .catch(error => this.setState({ error: error }));
+
+      let path = "http://localhost:3000/spaces";
+      this.props.history.push(path);
   }
 
   render() {

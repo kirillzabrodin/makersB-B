@@ -15,9 +15,9 @@ const SpaceList = (
   { data: { loading, error, spaces }, search },
   req
 ) => {
-  if (error) return "Error loading spaces";
-  //if spaces are returned from the GraphQL query, run the filter query
-  //and set equal to variable spaceSearch
+  if (error) return "Error loading restaurants";
+  //if restaurants are returned from the GraphQL query, run the filter query
+  //and set equal to variable restaurantSearch
 
   if (spaces && spaces.length) {
     //searchQuery
@@ -42,7 +42,6 @@ const SpaceList = (
                 <CardBody>
                   <CardTitle>{res.name}</CardTitle>
                   <CardText>{res.description}</CardText>
-                  <CardText>£{res.price}</CardText>
                 </CardBody>
                 <div className="card-footer">
                   <Link
@@ -84,11 +83,10 @@ const SpaceList = (
 
 const query = gql`
   {
-    spaces {
+    restaurants {
       _id
       name
       description
-      price
       image {
         url
       }
@@ -101,7 +99,7 @@ SpaceList.getInitialProps = async ({ req }) => {
   return { stars: json.stargazers_count };
 };
 // The `graphql` wrapper executes a GraphQL query and makes the results
-// available on the `data` prop of the wrapped component (SpaceList)
+// available on the `data` prop of the wrapped component (RestaurantList)
 export default graphql(query, {
   props: ({ data }) => ({
     data

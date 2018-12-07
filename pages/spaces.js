@@ -1,6 +1,5 @@
 import SpaceList from "../components/SpaceList";
 import React from "react";
-
 import {
   Alert,
   Button,
@@ -11,7 +10,7 @@ import {
   Row
 } from "reactstrap";
 
-class Index extends React.Component {
+class Spaces extends React.Component {
   constructor(props) {
     super(props);
     //query state will be passed to SpaceList for the filter query
@@ -51,4 +50,4 @@ class Index extends React.Component {
   }
 }
 
-export default Index;
+export default Spaces;
